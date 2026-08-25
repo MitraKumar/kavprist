@@ -18,6 +18,8 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
+        sketchy:
+          "relative bg-[#244b36] text-white hover:bg-[#1a3828] rounded-none border-none h-auto overflow-visible px-8 py-3.5 font-semibold",
       },
       size: {
         default:
@@ -44,14 +46,49 @@ function Button({
   className,
   variant = "default",
   size = "default",
+  children,
   ...props
 }: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
   return (
     <ButtonPrimitive
       data-slot="button"
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={cn(
+        buttonVariants({ variant, size, className }),
+        variant === "sketchy" && "h-auto px-8 py-3.5 overflow-visible rounded-none border-none"
+      )}
       {...props}
-    />
+    >
+      {variant === "sketchy" ? (
+        <>
+          <svg
+            className="absolute -inset-[3px] w-[calc(100%+6px)] h-[calc(100%+6px)] pointer-events-none stroke-zinc-900"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            {/* Sketch Line 1 */}
+            <path
+              d="M 1,4 C 25,3 75,5 99,2 C 98,28 99,72 97,98 C 72,97 28,99 2,96 C 3,72 2,28 1,4"
+              fill="none"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            {/* Sketch Line 2 */}
+            <path
+              d="M 4,2 C 32,5 68,3 97,3 C 96,32 98,68 98,97 C 68,96 32,98 3,95 C 5,68 4,32 4,2"
+              fill="none"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              opacity="0.85"
+            />
+          </svg>
+          <span className="relative z-10 font-sans tracking-wide">{children}</span>
+        </>
+      ) : (
+        children
+      )}
+    </ButtonPrimitive>
   )
 }
 
