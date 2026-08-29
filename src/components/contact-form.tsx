@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { submitContactForm } from "./contact-form-action"
+import { submitContactForm } from "@/actions/contact-form-action"
 import { toast } from "@/components/ui/toast"
 import { RiSendPlane2Line } from "@remixicon/react"
 
