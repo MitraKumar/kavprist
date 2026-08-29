@@ -1,11 +1,17 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-black: #2E2C2F;
-  --color-background: #475B63;
-  --color-accent: #729B79;
-  --color-secondary: #BACDB0; 
-  --color-primary: #BB4430;
+  --color-black: var(--black-color);
+  --color-background: var(--background-color);
+  --color-accent: var(--accent-color);
+  --color-green: var(--green-color);
+  --color-secondary: var(--secondary-color);
+  --color-primary: var(--primary-color);
+  --color-page-bg: var(--page-bg-color);
+  --color-text-base: var(--text-base-color);
+  --color-text-contrast: var(--text-contrast-color);
 
   --text-7xl: 80px;
   --text-6xl: 61px;
@@ -15,6 +21,30 @@
   --text-2xl: 21px;
   --text-xl:  16px;
   --text-xs:  12px;
+}
+
+:root {
+  --black-color: #2E2C2F;
+  --background-color: #475B63;
+  --accent-color: #729B79;
+  --green-color: #729B79;
+  --secondary-color: #BACDB0;
+  --primary-color: #BB4430;
+  --page-bg-color: #FFFFFF;
+  --text-base-color: #2E2C2F;
+  --text-contrast-color: #FFFFFF;
+}
+
+.dark {
+  --black-color: #2E2C2F;
+  --background-color: #475B63;
+  --accent-color: #729B79;
+  --green-color: #729B79;
+  --secondary-color: #BACDB0;
+  --primary-color: #3a1bc4;
+  --page-bg-color: #FFFFFF;
+  --text-base-color: #2E2C2F;
+  --text-contrast-color: #FFFFFF;
 }
 
 html {

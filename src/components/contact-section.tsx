@@ -9,7 +9,7 @@ export function ContactSection() {
           Contact <span className="text-primary">Us</span>
         </h2>
         <p className="mb-2">Let&apos;s build something together...</p>
-        <p className="p-4 mb-4 bg-background text-white flex gap-2 items-center">
+        <p className="p-4 mb-4 bg-background text-text-contrast flex gap-2 items-center">
           <RiMailLine />{" "}
           <span>
             Email us at{" "}

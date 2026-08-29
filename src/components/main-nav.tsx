@@ -22,12 +22,13 @@ import {
   RiTwitterXLine,
   RiYoutubeLine,
 } from "@remixicon/react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function MainNav() {
   return (
-    <div className="w-full">
+    <div className="w-full flex items-center justify-end">
       {/* Desktop Menu */}
-      <div className="hidden @lg:flex justify-end">
+      <div className="hidden @lg:flex items-center gap-4">
         <NavigationMenu>
           <NavigationMenuList className="flex gap-4">
             <NavigationMenuItem>
@@ -40,7 +41,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#about"
+                href="#"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 About
@@ -48,7 +49,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#services"
+                href="#"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Services
@@ -56,7 +57,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#contact"
+                href="#"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Contact
@@ -64,10 +65,12 @@ export function MainNav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        <ThemeToggle />
       </div>
 
       {/* Mobile Menu */}
-      <div className="@lg:hidden flex items-center justify-end">
+      <div className="@lg:hidden flex items-center gap-2">
+        <ThemeToggle />
         <Sheet>
           <SheetTrigger
             render={
@@ -81,12 +84,12 @@ export function MainNav() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[280px] bg-secondary border-l border-black/10 text-black p-6 flex flex-col justify-between">
             <div>
-              <SheetHeader className="mb-0">
+              <SheetHeader className="mb-8 p-0">
                 <SheetTitle className="text-left font-serif text-2xl border-b border-black/10 pb-4 text-black">
                   Menu
                 </SheetTitle>
               </SheetHeader>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 px-2">
                 <a
                   href="#"
                   className="relative px-4 py-2 w-fit block text-lg font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full"
@@ -115,7 +118,7 @@ export function MainNav() {
             </div>
 
             {/* Mobile Drawer Footer with Contact Info & Socials */}
-            <div className="border-t border-black/10 pt-6 mt-auto flex flex-col gap-4 px-4">
+            <div className="border-t border-black/10 pt-6 mt-auto flex flex-col gap-4">
               <div className="text-xs text-black/60 uppercase font-semibold tracking-wider">Contact Info</div>
               <a
                 href="mailto:help@domain.com"
@@ -124,16 +127,16 @@ export function MainNav() {
                 <RiMailLine className="size-4 shrink-0" /> help@domain.com
               </a>
               <div className="flex gap-4 mt-2 text-black/80">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook" className="hover:text-primary transition-colors">
+                <a href="#" aria-label="Facebook" className="hover:text-primary transition-colors">
                   <RiFacebookBoxLine className="size-5" />
                 </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram" className="hover:text-primary transition-colors">
+                <a href="#" aria-label="Instagram" className="hover:text-primary transition-colors">
                   <RiInstagramLine className="size-5" />
                 </a>
-                <a href="https://x.com" target="_blank" aria-label="X / Twitter" className="hover:text-primary transition-colors">
+                <a href="#" aria-label="X / Twitter" className="hover:text-primary transition-colors">
                   <RiTwitterXLine className="size-5" />
                 </a>
-                <a href="https://youtube.com" target="_blank" aria-label="YouTube" className="hover:text-primary transition-colors">
+                <a href="#" aria-label="YouTube" className="hover:text-primary transition-colors">
                   <RiYoutubeLine className="size-5" />
                 </a>
               </div>
