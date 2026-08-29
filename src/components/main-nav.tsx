@@ -26,7 +26,7 @@ export function MainNav() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="#"
-                className="hover:underline hover:bg-transparent bg-transparent text-base p-0 cursor-pointer font-normal text-black"
+                className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Home
               </NavigationMenuLink>
@@ -34,7 +34,7 @@ export function MainNav() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="#"
-                className="hover:underline hover:bg-transparent bg-transparent text-base p-0 cursor-pointer font-normal text-black"
+                className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 About
               </NavigationMenuLink>
@@ -42,7 +42,7 @@ export function MainNav() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="#"
-                className="hover:underline hover:bg-transparent bg-transparent text-base p-0 cursor-pointer font-normal text-black"
+                className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Services
               </NavigationMenuLink>
@@ -50,7 +50,7 @@ export function MainNav() {
             <NavigationMenuItem>
               <NavigationMenuLink
                 href="#"
-                className="hover:underline hover:bg-transparent bg-transparent text-base p-0 cursor-pointer font-normal text-black"
+                className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Contact
               </NavigationMenuLink>
@@ -78,28 +78,28 @@ export function MainNav() {
                 Menu
               </SheetTitle>
             </SheetHeader>
-            <div className="flex flex-col gap-6 px-2">
+            <div className="flex flex-col gap-4 px-2">
               <a
                 href="#"
-                className="text-lg font-normal hover:underline text-black transition-colors"
+                className="relative px-4 py-2 w-fit block text-lg font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full"
               >
                 Home
               </a>
               <a
                 href="#"
-                className="text-lg font-normal hover:underline text-black transition-colors"
+                className="relative px-4 py-2 w-fit block text-lg font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full"
               >
                 About
               </a>
               <a
                 href="#"
-                className="text-lg font-normal hover:underline text-black transition-colors"
+                className="relative px-4 py-2 w-fit block text-lg font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full"
               >
                 Services
               </a>
               <a
                 href="#"
-                className="text-lg font-normal hover:underline text-black transition-colors"
+                className="relative px-4 py-2 w-fit block text-lg font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full"
               >
                 Contact
               </a>

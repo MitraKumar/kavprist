@@ -32,7 +32,7 @@ export function ServiceCard({
       ref={cardRef}
       onMouseMove={handleMouseMove}
       className={cn(
-        "col-span-1 p-6 bg-green shadow-inner relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer",
+        "col-span-1 p-6 bg-accent shadow-inner relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer",
         className
       )}
       {...props}

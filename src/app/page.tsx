@@ -62,7 +62,7 @@ export default function Home() {
       {/* Services Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 bg-background px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-6 @lg:mb-8">
-          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl text-white">What <span className="text-green">we offer</span></h2>
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl text-white">What <span className="text-accent">we offer</span></h2>
         </div>
 
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
@@ -113,7 +113,7 @@ export default function Home() {
       <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-4 px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 @lg:pt-20">
           <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-4">Contact <span className="text-primary">Us</span></h2>
-          <p className="mb-2">Let's build something together...</p>
+          <p className="mb-2">Let&apos;s build something together...</p>
           <p className="p-4 mb-4 bg-background text-white flex gap-2 items-center">
             <RiMailLine /> <span>Email us at <a href="mailto://help@domain.com" className="text-secondary hover:text-primary">help@domain.com</a></span>
           </p>
@@ -127,21 +127,21 @@ export default function Home() {
 
       {/* Footer Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-8 @lg:py-8 px-6 @lg:px-0 bg-background text-white">
-        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
-          <p className="text-xl">LOGO</p>
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 mb-4 @lg:mb-0">
+          <p className="text-xl mb-1 @lg:mb-0">LOGO</p>
           <p className="text-xl">Kolkata, India</p>
         </div>
-        <div className="col-span-1 @lg:col-start-7 @lg:col-span-4 flex gap-4 justify-end items-center">
+        <div className="col-span-1 @lg:col-start-7 @lg:col-span-4 mb-8 @lg:mb-0 flex gap-4 @lg:justify-end items-center">
           <RiFacebookBoxLine />
           <RiInstagramLine />
           <RiYoutubeLine />
           <RiTwitterXLine />
         </div>
 
-        <hr className="col-span-1 @lg:col-start-3 @lg:col-span-8" />
+        <hr className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-8 @lg:mb-0" />
 
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 flex justify-center">
-          <p className="text-xl">Copyright © 2026 Kavprist Technologies. All rights reserved.</p>
+          <p className="text-xl">Copyright © 2026 <span className="text-accent">Kavprist Technologies</span>. All rights reserved.</p>
         </div>
       </div>
     </main>
