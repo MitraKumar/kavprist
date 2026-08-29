@@ -1,3 +1,8 @@
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { RiArrowRightUpLine } from "@remixicon/react";
+import Link from "next/link";
+
 export function HeroSection() {
   return (
     <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary pt-20 @lg:pt-28">
@@ -20,6 +25,10 @@ export function HeroSection() {
             Development with{" "}
             <span className="text-primary">QUALITY & INTELLIGENCE</span>
           </p>
+
+          <a href="#contact" className={cn("mt-4", "border-2", "border-primary", buttonVariants({ variant: "link" }))}>
+            Let's Connect <RiArrowRightUpLine />
+          </a>
         </div>
       </div>
     </div>
