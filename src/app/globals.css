@@ -9,6 +9,7 @@
   --color-green: var(--green-color);
   --color-secondary: var(--secondary-color);
   --color-primary: var(--primary-color);
+  --color-primary-foreground: var(--text-contrast-color);
   --color-page-bg: var(--page-bg-color);
   --color-text-base: var(--text-base-color);
   --color-text-contrast: var(--text-contrast-color);
@@ -24,11 +25,12 @@
 }
 
 :root {
+  /* Light Mode Base Colors */
   --black-color: #2E2C2F;
   --background-color: #475B63;
-  --accent-color: #729B79;
-  --green-color: #729B79;
-  --secondary-color: #BACDB0;
+  --accent-color: #A9DCB3; /* bright light green for highlights, passes contrast on slate gray */
+  --green-color: #2D4433;  /* dark forest green for cards, passes contrast under white text */
+  --secondary-color: #C8DCBE; /* slightly lighter mint, passes contrast on slate gray */
   --primary-color: #BB4430;
   --page-bg-color: #FFFFFF;
   --text-base-color: #2E2C2F;
@@ -36,15 +38,16 @@
 }
 
 .dark {
-  --black-color: #2E2C2F;
-  --background-color: #475B63;
-  --accent-color: #729B79;
-  --green-color: #729B79;
-  --secondary-color: #BACDB0;
-  --primary-color: #3a1bc4;
-  --page-bg-color: #FFFFFF;
-  --text-base-color: #2E2C2F;
-  --text-contrast-color: #FFFFFF;
+  /* Dark Mode Complementary Colors */
+  --black-color: #BACDB0; /* complementary secondary: light mint */
+  --background-color: #B8A49C; /* complementary bg: rose-gray */
+  --accent-color: #45324F; /* complementary accent: dark plum, passes contrast on rose-gray background */
+  --green-color: #8D6486; /* complementary green: medium lavender */
+  --secondary-color: #45324F; /* complementary secondary: dark plum */
+  --primary-color: #44BBCF; /* complementary primary: cyan/teal */
+  --page-bg-color: #2E2C2F; /* dark background for page */
+  --text-base-color: #FFFFFF; /* light text on dark bg */
+  --text-contrast-color: #2E2C2F; /* dark text on light elements */
 }
 
 html {
@@ -53,4 +56,43 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-instrument-serif);
+}
+
+/* Accessibility overrides for element color contrasts */
+.bg-secondary {
+  color: var(--black-color) !important;
+}
+
+/* Services section text colors override for WCAG contrast in dark mode */
+.bg-background .text-white {
+  color: var(--text-contrast-color) !important;
+}
+
+/* Services cards custom background color override for WCAG contrast */
+.bg-background .bg-accent {
+  background-color: var(--green-color) !important;
+}
+
+/* Hover text contrast override for services cards to ensure WCAG AA contrast */
+.group:hover .group-hover\:text-text-contrast\/90 {
+  color: var(--text-contrast-color) !important;
+}
+
+/* Services card text color override */
+.bg-background .bg-accent h3,
+.bg-background .bg-accent p,
+.bg-background .bg-accent div {
+  color: #FFFFFF !important;
+}
+
+/* Services card text color override in dark mode on hover */
+.dark .bg-background .bg-accent:hover h3,
+.dark .bg-background .bg-accent:hover p,
+.dark .bg-background .bg-accent:hover div {
+  color: var(--text-contrast-color) !important;
+}
+
+/* Hero section text-primary contrast override */
+.bg-secondary .text-primary {
+  color: var(--black-color) !important;
 }

@@ -15,7 +15,7 @@ export function ContactSection() {
             Email us at{" "}
             <a
               href="mailto://help@domain.com"
-              className="text-secondary hover:text-primary"
+              className="text-text-contrast underline hover:text-primary font-medium"
             >
               help@domain.com
             </a>

@@ -32,7 +32,7 @@ export function ServiceCard({
       ref={cardRef}
       onMouseMove={handleMouseMove}
       className={cn(
-        "col-span-1 p-6 bg-accent shadow-inner relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer",
+        "col-span-1 p-6 bg-accent shadow-inner relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer group-hover:bg-primary",
         className
       )}
       {...props}
@@ -47,11 +47,11 @@ export function ServiceCard({
 
       {/* Card Content layered above the hover overlay */}
       <div className="relative z-10 pointer-events-none">
-        <div className="p-2.5 bg-white/10 rounded-full w-fit mb-4 text-white">
+        <div className="p-2.5 bg-black/5 dark:bg-white/10 rounded-full w-fit mb-4 text-black dark:text-white group-hover:text-text-contrast group-hover:bg-text-contrast/10 transition-all duration-300">
           {icon}
         </div>
-        <h3 className="text-2xl mb-2 font-serif text-white">{title}</h3>
-        <p className="text-base leading-relaxed text-white/90">{description}</p>
+        <h3 className="text-2xl mb-2 font-serif text-black dark:text-white group-hover:text-text-contrast transition-colors duration-300">{title}</h3>
+        <p className="text-base leading-relaxed text-black dark:text-white group-hover:text-text-contrast/90 transition-colors duration-300">{description}</p>
       </div>
     </div>
   )
