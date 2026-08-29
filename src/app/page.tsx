@@ -3,9 +3,20 @@ import { MainNav } from "@/components/main-nav";
 export default function Home() {
   return (
     <main className="w-full @container">
+      {/* Sticky/Fixed Header with Glassmorphism */}
+      <header className="fixed top-0 z-50 w-full bg-secondary/10 shadow backdrop-blur-md border-b border-black/5 transition-all duration-300">
+        <div className="grid grid-cols-1 @lg:grid-cols-12 py-4 px-6 @lg:px-0">
+          <div className="col-span-1 @lg:col-span-12 flex justify-end @lg:grid @lg:grid-cols-subgrid">
+            <div className="@lg:col-end-10 flex justify-center @lg:justify-start">
+              <MainNav />
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary">
-        {/* Background Image Layer (Spans full height from nav to bottom) */}
+      <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary pt-20 @lg:pt-28">
+        {/* Background Image Layer (Spans full height from top to bottom of hero) */}
         <div className="absolute inset-y-0 right-0 w-full @lg:w-1/2 opacity-20 pointer-events-none z-0">
           <img 
             src={"/assets/header-bg-3.jpg"} 
@@ -14,13 +25,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="col-span-1 @lg:col-span-12 py-4 px-6 @lg:px-0 flex justify-end @lg:grid @lg:grid-cols-subgrid z-10">
-          <div className="@lg:col-end-10 flex justify-center @lg:justify-start">
-            <MainNav />
-          </div>
-        </div>
         <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid">
-          <div className="col-span-1 px-6 py-12 @lg:col-start-3 @lg:col-span-4 @lg:py-24 @lg:px-0">
+          <div className="col-span-1 px-6 pb-12 pt-4 @lg:col-start-3 @lg:col-span-4 @lg:pb-24 @lg:pt-12 @lg:px-0">
             <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">Transforming Ideas into digital Space</h1>
             <p className="text-xs py-4 tracking-wider">Development with QUALITY & INTELLIGENCE</p>
           </div>
