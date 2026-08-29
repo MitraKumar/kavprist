@@ -32,7 +32,7 @@ export function MainNav() {
           <NavigationMenuList className="flex gap-4">
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#"
+                href="/"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Home
@@ -40,7 +40,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#"
+                href="#about"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 About
@@ -48,7 +48,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#"
+                href="#services"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Services
@@ -56,7 +56,7 @@ export function MainNav() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink
-                href="#"
+                href="#contact"
                 className="relative px-4 py-1.5 text-base cursor-pointer font-normal text-black transition-all duration-300 hover:bg-primary hover:text-white rounded-full bg-transparent"
               >
                 Contact

@@ -3,7 +3,7 @@ import { RiMailLine } from "@remixicon/react"
 
 export function ContactSection() {
   return (
-    <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-4 px-6 @lg:px-0">
+    <div id="contact" className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-4 px-6 @lg:px-0">
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 @lg:pt-20">
         <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-4">
           Contact <span className="text-primary">Us</span>
@@ -23,7 +23,7 @@ export function ContactSection() {
         </p>
       </div>
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-4"></div>
-      <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-background p-6 @lg:p-8 rounded-xl shadow-lg">
+      <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-background p-6 @lg:p-8 shadow-lg">
         <ContactForm />
       </div>
     </div>
