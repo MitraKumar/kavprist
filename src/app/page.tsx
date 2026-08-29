@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/contact-form";
 import { MainNav } from "@/components/main-nav";
 import {
   RiFileSearchLine,
@@ -94,6 +95,22 @@ export default function Home() {
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
 
+        </div>
+      </div>
+
+      {/* Contact Us Section */}
+      <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-24 px-6 @lg:px-0">
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 mb-6 @lg:mb-8">
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">Contact Us</h2>
+        </div>
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 mb-6 @lg:mb-8">
+          <p className="mb-4">Ready to elevate your digital standards? Connect with our team of experts.</p>
+          <p className="p-4 mb-4 bg-background text-white">
+            Email us at <a href="mailto://help@domain.com" className="text-secondary">help@domain.com</a>
+          </p>
+        </div>
+        <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 mb-6 @lg:mb-8">
+          <ContactForm />
         </div>
       </div>
     </main>
