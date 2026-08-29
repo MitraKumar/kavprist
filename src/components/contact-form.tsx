@@ -76,7 +76,7 @@ export function ContactForm() {
         />
       </div>
 
-      <Button type="submit" disabled={pending} className="bg-primary hover:bg-primary/70 text-white font-medium py-2 cursor-pointer" size="lg">
+      <Button type="submit" disabled={pending} className="font-medium py-2 cursor-pointer" variant="secondary" size="lg">
         {pending ? "Sending..." : "Submit"} <RiSendPlane2Line />
       </Button>
     </form>

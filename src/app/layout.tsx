@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", instrumentSerif.variable, instrumentSans.variable)}
+      className={cn("h-full", "antialiased", "text-black", instrumentSerif.variable, instrumentSans.variable)}
     >
       <body className="min-h-full flex flex-col">
         {children}

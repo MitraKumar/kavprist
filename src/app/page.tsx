@@ -40,8 +40,8 @@ export default function Home() {
 
         <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid">
           <div className="col-span-1 px-6 pb-12 pt-4 @lg:col-start-3 @lg:col-span-4 @lg:pb-24 @lg:pt-12 @lg:px-0">
-            <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">Transforming Ideas into digital Space</h1>
-            <p className="text-xs py-4 tracking-wider">Development with QUALITY & INTELLIGENCE</p>
+            <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">Transforming <span className="text-primary">Ideas</span> into Digital Space</h1>
+            <p className="text-xs py-4 tracking-wider">Development with <span className="text-primary">QUALITY & INTELLIGENCE</span></p>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function Home() {
       {/* About Us Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-6 @lg:mb-8">
-          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">Who are we</h2>
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">Who are <span className="text-primary">we</span></h2>
         </div>
 
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8">
@@ -61,7 +61,7 @@ export default function Home() {
       {/* Services Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 bg-background px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-6 @lg:mb-8">
-          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl text-white">What we offer</h2>
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl text-white">What <span className="text-green">we offer</span></h2>
         </div>
 
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
@@ -106,8 +106,8 @@ export default function Home() {
       {/* Contact Us Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-4 px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 @lg:pt-20">
-          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-8">Contact Us</h2>
-          <p className="mb-4">Ready to elevate your digital standards? Connect with our team of experts.</p>
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-4">Contact <span className="text-primary">Us</span></h2>
+          <p className="mb-2">Ready to elevate your digital standards? Connect with our team of experts.</p>
           <p className="p-4 mb-4 bg-background text-white flex gap-2 items-center">
             <RiMailLine /> <span>Email us at <a href="mailto://help@domain.com" className="text-secondary">help@domain.com</a></span>
           </p>
