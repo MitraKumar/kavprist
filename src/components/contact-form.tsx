@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { submitContactForm } from "./contact-form-action"
 import { toast } from "@/components/ui/toast"
+import { RiMailLine, RiSendPlane2Line } from "@remixicon/react"
 
 export function ContactForm() {
   const [pending, setPending] = React.useState(false);
@@ -38,9 +39,9 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-md mx-auto">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full py-16 px-8">
       <div className="flex flex-col gap-2">
-        <Label htmlFor="name" className="text-black font-medium">Name</Label>
+        <Label htmlFor="name" className="font-medium text-white">Name</Label>
         <Input
           type="text"
           id="name"
@@ -52,7 +53,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="email" className="text-black font-medium">Email</Label>
+        <Label htmlFor="email" className="text-white font-medium">Email</Label>
         <Input
           type="email"
           id="email"
@@ -64,7 +65,7 @@ export function ContactForm() {
       </div>
 
       <div className="flex flex-col gap-2">
-        <Label htmlFor="message" className="text-black font-medium">Message</Label>
+        <Label htmlFor="message" className="text-white font-medium">Message</Label>
         <Textarea
           id="message"
           name="message"
@@ -75,8 +76,8 @@ export function ContactForm() {
         />
       </div>
 
-      <Button type="submit" disabled={pending} className="bg-primary hover:bg-primary/90 text-white font-medium py-2 rounded-lg cursor-pointer">
-        {pending ? "Sending..." : "Submit"}
+      <Button type="submit" disabled={pending} className="bg-primary hover:bg-primary/70 text-white font-medium py-2 cursor-pointer" size="lg">
+        {pending ? "Sending..." : "Submit"} <RiSendPlane2Line />
       </Button>
     </form>
   );
