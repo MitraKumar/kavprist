@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { submitContactForm } from "./contact-form-action"
 import { toast } from "@/components/ui/toast"
-import { RiMailLine, RiSendPlane2Line } from "@remixicon/react"
+import { RiSendPlane2Line } from "@remixicon/react"
 
 export function ContactForm() {
   const [pending, setPending] = React.useState(false);
