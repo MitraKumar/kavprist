@@ -7,6 +7,10 @@ import {
   RiCodeLine,
   RiAccessibilityLine,
   RiMailLine,
+  RiFacebookBoxLine,
+  RiInstagramLine,
+  RiYoutubeLine,
+  RiTwitterXLine,
 } from "@remixicon/react";
 
 export default function Home() {
@@ -102,16 +106,36 @@ export default function Home() {
       {/* Contact Us Section */}
       <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-4 px-6 @lg:px-0">
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 @lg:pt-20">
-          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">Contact Us</h2>
-        </div>
-        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
+          <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-8">Contact Us</h2>
           <p className="mb-4">Ready to elevate your digital standards? Connect with our team of experts.</p>
           <p className="p-4 mb-4 bg-background text-white flex gap-2 items-center">
             <RiMailLine /> <span>Email us at <a href="mailto://help@domain.com" className="text-secondary">help@domain.com</a></span>
           </p>
         </div>
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
+        </div>
         <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-background">
           <ContactForm />
+        </div>
+      </div>
+
+      {/* Footer Section */}
+      <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-8 @lg:py-8 px-6 @lg:px-0 bg-background text-white">
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
+          <p className="text-xl">LOGO</p>
+          <p className="text-xl">Kolkata, India</p>
+        </div>
+        <div className="col-span-1 @lg:col-start-7 @lg:col-span-4 flex gap-4 justify-end items-center">
+          <RiFacebookBoxLine />
+          <RiInstagramLine />
+          <RiYoutubeLine />
+          <RiTwitterXLine />
+        </div>
+
+        <hr className="col-span-1 @lg:col-start-3 @lg:col-span-8" />
+
+        <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 flex justify-center">
+          <p className="text-xl">Copyright © 2026 Kavprist Technologies. All rights reserved.</p>
         </div>
       </div>
     </main>
