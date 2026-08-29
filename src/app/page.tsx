@@ -37,6 +37,7 @@ export default function Home() {
             src={"/assets/header-bg-3.jpg"} 
             alt="" 
             className="w-full h-full object-cover @lg:max-h-none"
+            fetchPriority="high"
           />
         </div>
 
