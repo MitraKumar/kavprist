@@ -1,3 +1,5 @@
+import { MainNav } from "@/components/main-nav";
+
 export default function Home() {
   return (
     <main className="w-full @container">
@@ -12,13 +14,10 @@ export default function Home() {
           />
         </div>
 
-        <div className="col-span-1 @lg:col-span-12 py-4 px-6 @lg:px-0 flex justify-center @lg:grid @lg:grid-cols-subgrid">
-          <ul className="flex gap-4 @lg:col-start-6 justify-center @lg:justify-start">
-            <li className="cursor-pointer hover:underline">Home</li>
-            <li className="cursor-pointer hover:underline">About</li>
-            <li className="cursor-pointer hover:underline">Services</li>
-            <li className="cursor-pointer hover:underline">Contact</li>
-          </ul>
+        <div className="col-span-1 @lg:col-span-12 py-4 px-6 @lg:px-0 flex justify-end @lg:grid @lg:grid-cols-subgrid z-10">
+          <div className="@lg:col-end-10 flex justify-center @lg:justify-start">
+            <MainNav />
+          </div>
         </div>
         <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid">
           <div className="col-span-1 px-6 py-12 @lg:col-start-3 @lg:col-span-4 @lg:py-24 @lg:px-0">
