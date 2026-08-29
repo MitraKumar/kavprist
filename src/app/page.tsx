@@ -2,7 +2,16 @@ export default function Home() {
   return (
     <main className="w-full @container">
       {/* Hero Section */}
-      <div className="grid grid-cols-1 @lg:grid-cols-12 bg-secondary">
+      <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary">
+        {/* Background Image Layer (Spans full height from nav to bottom) */}
+        <div className="absolute inset-y-0 right-0 w-full @lg:w-1/2 opacity-20 pointer-events-none z-0">
+          <img 
+            src={"/assets/header-bg-3.jpg"} 
+            alt="" 
+            className="w-full h-full object-cover @lg:max-h-none"
+          />
+        </div>
+
         <div className="col-span-1 @lg:col-span-12 py-4 px-6 @lg:px-0 flex justify-center @lg:grid @lg:grid-cols-subgrid">
           <ul className="flex gap-4 @lg:col-start-6 justify-center @lg:justify-start">
             <li className="cursor-pointer hover:underline">Home</li>
@@ -11,13 +20,11 @@ export default function Home() {
             <li className="cursor-pointer hover:underline">Contact</li>
           </ul>
         </div>
-        <div className="col-span-1 px-6 py-12 @lg:col-start-3 @lg:col-span-4 @lg:py-24 @lg:px-0">
-          <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">Transforming Ideas into digital Space</h1>
-          <p className="text-xs py-4 tracking-wider">Development with QUALITY & INTELLIGENCE</p>
-        </div>
-
-        <div className="col-span-1 @lg:col-start-7 @lg:col-span-6 opacity-20">
-          <img src={"/assets/header-bg-3.jpg"} alt="" className="w-full h-full object-cover max-h-[400px] @lg:max-h-none"/>
+        <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid">
+          <div className="col-span-1 px-6 py-12 @lg:col-start-3 @lg:col-span-4 @lg:py-24 @lg:px-0">
+            <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">Transforming Ideas into digital Space</h1>
+            <p className="text-xs py-4 tracking-wider">Development with QUALITY & INTELLIGENCE</p>
+          </div>
         </div>
       </div>
       
