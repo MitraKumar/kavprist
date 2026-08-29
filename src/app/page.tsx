@@ -1,4 +1,11 @@
 import { MainNav } from "@/components/main-nav";
+import {
+  RiFileSearchLine,
+  RiSpeedUpLine,
+  RiShieldKeyholeLine,
+  RiCodeLine,
+  RiAccessibilityLine,
+} from "@remixicon/react";
 
 export default function Home() {
   return (
@@ -58,26 +65,31 @@ export default function Home() {
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 @lg:grid @lg:grid-cols-subgrid py-8 grid grid-cols-1 gap-4 text-white">
 
           <div className="col-span-1 @lg:col-span-8 p-4 shadow-inner bg-green">
+            <RiFileSearchLine className="size-8 mb-4 text-white" />
             <h3 className="text-2xl mb-4">Full Site Audit</h3>
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
 
           <div className="col-span-1 @lg:col-span-4 p-4 shadow-inner bg-green">
+            <RiSpeedUpLine className="size-8 mb-4 text-white" />
             <h3 className="text-2xl mb-4">Performance Optimization</h3>
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
 
           <div className="col-span-1 @lg:col-span-4 p-4 shadow-inner bg-green">
+            <RiShieldKeyholeLine className="size-8 mb-4 text-white" />
             <h3 className="text-2xl mb-4">Security Assesment</h3>
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
 
           <div className="col-span-1 @lg:col-span-4 p-4 shadow-inner bg-green">
+            <RiCodeLine className="size-8 mb-4 text-white" />
             <h3 className="text-2xl mb-4">API Verification</h3>
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
 
           <div className="col-span-1 @lg:col-span-4 p-4 shadow-inner bg-green">
+            <RiAccessibilityLine className="size-8 mb-4 text-white" />
             <h3 className="text-2xl mb-4">Accessibility Audit</h3>
             <p className="text-base mb-2 leading-relaxed text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium recusandae consequuntur magnam eveniet, odit architecto culpa tempora voluptatem sint.</p>
           </div>
