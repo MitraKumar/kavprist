@@ -39,7 +39,7 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full py-16 px-8">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
       <div className="flex flex-col gap-2">
         <Label htmlFor="name" className="font-medium text-white">Name</Label>
         <Input

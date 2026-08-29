@@ -20,10 +20,11 @@ export default function Home() {
       {/* Sticky/Fixed Header with Glassmorphism */}
       <header className="fixed top-0 z-50 w-full bg-secondary/10 shadow backdrop-blur-md border-b border-black/5 transition-all duration-300">
         <div className="grid grid-cols-1 @lg:grid-cols-12 py-4 px-6 @lg:px-0">
-          <div className="col-span-1 @lg:col-span-12 flex justify-end @lg:grid @lg:grid-cols-subgrid">
-            <div className="@lg:col-end-10 flex justify-center @lg:justify-start">
-              <MainNav />
-            </div>
+          <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 flex justify-between items-center w-full">
+            <a href="#" className="font-mono text-xl font-bold tracking-tight text-black border-b-2 border-black/60 pb-0.5 hover:border-black transition-colors">
+              &lt;/kavprist&gt;
+            </a>
+            <MainNav />
           </div>
         </div>
       </header>
@@ -120,7 +121,7 @@ export default function Home() {
         </div>
         <div className="col-span-1 @lg:col-start-3 @lg:col-span-4">
         </div>
-        <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-background">
+        <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-background p-6 @lg:p-8 shadow-lg">
           <ContactForm />
         </div>
       </div>
