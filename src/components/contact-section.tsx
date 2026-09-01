@@ -11,7 +11,7 @@ export function ContactSection() {
         <p className="mb-2">Let&apos;s build something together...</p>
         <p className="py-4 mb-4 inset-shadow-sm flex gap-2 items-center">
           <RiMailLine />{" "}
-          <span className="text-secondary-foreground">
+          <span className="text-black">
             Email us at{" "}
             <a
               href="mailto://help@domain.com"

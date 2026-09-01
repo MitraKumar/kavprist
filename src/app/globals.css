@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant light (&:where(.light, .light *));
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -28,19 +29,6 @@
 }
 
 :root {
-  --black-color: #1D1D1E;
-  --white-color: #ECECEC;
-  --background-color: #475B63;
-  --accent-color: #729B79;
-  --green-color: #729B79;
-  --secondary-color: #234606;
-  --primary-color: #1446A0;
-  --page-bg-color: #FFFFFF;
-  --text-base-color: #2E2C2F;
-  --text-contrast-color: #FFFFFF;
-}
-
-.dark {
   --black-color: #ECECEC;
   --white-color: #1D1D1E;
   --primary-color: #62ff62;
@@ -48,6 +36,21 @@
   --secondary-color: #234606;
   --secondary-color-foreground: #ECECEC;
 
+  --background-color: #475B63;
+  --accent-color: #729B79;
+  --green-color: #729B79;
+  --page-bg-color: #FFFFFF;
+  --text-base-color: #2E2C2F;
+  --text-contrast-color: #FFFFFF;
+}
+
+.light {
+  --black-color: #1D1D1E;
+  --white-color: #ECECEC;
+  --primary-color: color-mix(in oklab, #62ff62 150%, transparent);
+  --primary-color-foreground: #1D1D1E;
+  --secondary-color: color-mix(in oklab, #234606 80%, transparent);
+  --secondary-color-foreground: #ECECEC;
 
   --background-color: #475B63;
   --accent-color: #729B79;
