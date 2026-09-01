@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary pt-20 @lg:pt-28">
       {/* Background Image Layer (Spans full height from top to bottom of hero) */}
-      <div className="absolute inset-y-0 right-0 w-full @lg:w-3/4 opacity-80 @md:opacity-80 light:opacity-20 light:@md:opacity-20 pointer-events-none z-0">
+      <div className="absolute inset-y-0 right-0 w-full @lg:w-3/4 opacity-20 @md:opacity-80 light:opacity-20 light:@md:opacity-20 pointer-events-none z-0">
         <img
           src={"/assets/header-bg-3.jpg"}
           alt=""

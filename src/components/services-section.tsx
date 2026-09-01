@@ -6,10 +6,11 @@ import {
   RiCodeLine,
   RiAccessibilityLine,
 } from "@remixicon/react"
+import { Meteors } from "./ui/meteors"
 
 export function ServicesSection() {
   return (
-    <div id="services" className="grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 bg-secondary text-secondary-foreground px-6 @lg:px-0">
+    <div id="services" className="relative grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 bg-secondary text-secondary-foreground px-6 @lg:px-0">
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-6 @lg:mb-8">
         <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">
           What we <span className="text-primary">offer</span>

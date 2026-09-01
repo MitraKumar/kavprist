@@ -67,3 +67,21 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-instrument-serif);
 }
+
+@theme inline {
+  --animate-meteor-effect: meteor 2s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
