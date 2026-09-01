@@ -6,15 +6,15 @@ export function HeroSection() {
   return (
     <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary pt-20 @lg:pt-28">
       {/* Background Image Layer (Spans full height from top to bottom of hero) */}
-      <div className="absolute inset-y-0 right-0 w-full @lg:w-1/2 opacity-20 pointer-events-none z-0">
+      <div className="absolute inset-y-0 right-0 w-full @lg:w-3/4 opacity-20 @md:dark:opacity-80 pointer-events-none z-0">
         <img
           src={"/assets/header-bg-3.jpg"}
           alt=""
-          className="w-full h-full object-cover @lg:max-h-none"
+          className="@lg:mask-l-from-40% @lg:mask-l-to-90% w-full h-full object-cover @lg:max-h-none"
         />
       </div>
 
-      <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid">
+      <div className="col-span-1 @lg:col-span-12 grid grid-cols-subgrid text-black">
         <div className="col-span-1 px-6 pb-12 pt-4 @lg:col-start-3 @lg:col-span-4 @lg:pb-24 @lg:pt-12 @lg:px-0">
           <h1 className="text-5xl @sm:text-6xl @4xl:text-7xl leading-tight">
             Transforming <span className="text-primary">Ideas</span> into Digital

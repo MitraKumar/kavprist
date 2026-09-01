@@ -32,7 +32,7 @@ export function ServiceCard({
       ref={cardRef}
       onMouseMove={handleMouseMove}
       className={cn(
-        "col-span-1 p-6 bg-accent shadow-inner relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer",
+        "col-span-1 p-6 bg-primary/80 relative overflow-hidden group select-none transition-colors duration-500 cursor-pointer",
         className
       )}
       {...props}
@@ -50,8 +50,8 @@ export function ServiceCard({
         <div className="p-2.5 bg-white/10 rounded-full w-fit mb-4 text-white">
           {icon}
         </div>
-        <h3 className="text-2xl mb-2 font-serif text-white">{title}</h3>
-        <p className="text-base leading-relaxed text-white/90">{description}</p>
+        <h3 className="text-2xl mb-2 font-serif text-primary-foreground">{title}</h3>
+        <p className="text-base leading-relaxed text-primary-foreground/90">{description}</p>
       </div>
     </div>
   )

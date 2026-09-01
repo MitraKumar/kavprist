@@ -7,7 +7,7 @@ import {
 
 export function Footer() {
   return (
-    <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-8 @lg:py-8 px-6 @lg:px-0 bg-background text-white">
+    <div className="grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-8 @lg:py-8 px-6 @lg:px-0 text-black">
       <div className="col-span-1 @lg:col-start-3 mb-4 @lg:mb-0">
         <p className="text-xl mb-1 @lg:mb-2 ">
           <span className="font-mono font-bold tracking-tight border-b-2 border-white">

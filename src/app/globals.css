@@ -4,11 +4,15 @@
 
 @theme {
   --color-black: var(--black-color);
+  --color-white: var(--white-color);
+  --color-secondary: var(--secondary-color);
+  --color-secondary-foreground: var(--secondary-color-foreground);
+  --color-primary: var(--primary-color);
+  --color-primary-foreground: var(--primary-color-foreground);
+
   --color-background: var(--background-color);
   --color-accent: var(--accent-color);
   --color-green: var(--green-color);
-  --color-secondary: var(--secondary-color);
-  --color-primary: var(--primary-color);
   --color-page-bg: var(--page-bg-color);
   --color-text-base: var(--text-base-color);
   --color-text-contrast: var(--text-contrast-color);
@@ -24,24 +28,30 @@
 }
 
 :root {
-  --black-color: #2E2C2F;
+  --black-color: #1D1D1E;
+  --white-color: #ECECEC;
   --background-color: #475B63;
   --accent-color: #729B79;
   --green-color: #729B79;
-  --secondary-color: #BACDB0;
-  --primary-color: #BB4430;
+  --secondary-color: #234606;
+  --primary-color: #1446A0;
   --page-bg-color: #FFFFFF;
   --text-base-color: #2E2C2F;
   --text-contrast-color: #FFFFFF;
 }
 
 .dark {
-  --black-color: #2E2C2F;
+  --black-color: #ECECEC;
+  --white-color: #1D1D1E;
+  --primary-color: #62ff62;
+  --primary-color-foreground: #1D1D1E;
+  --secondary-color: #234606;
+  --secondary-color-foreground: #ECECEC;
+
+
   --background-color: #475B63;
   --accent-color: #729B79;
   --green-color: #729B79;
-  --secondary-color: #BACDB0;
-  --primary-color: #3a1bc4;
   --page-bg-color: #FFFFFF;
   --text-base-color: #2E2C2F;
   --text-contrast-color: #FFFFFF;
