@@ -40,29 +40,42 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full">
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="name" className="font-medium text-secondary-foreground">Name</Label>
-        <Input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-          className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
-        />
+      <div className="w-full flex flex-wrap gap-2">
+        <div className="flex flex-1 flex-col gap-2">
+          <Label htmlFor="name" className="font-medium text-secondary-foreground">Name</Label>
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+          />
+        </div>
+        <div className="flex flex-1 flex-col gap-2">
+          <Label htmlFor="email" className="text-secondary-foreground font-medium">Email</Label>
+          <Input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+          />
+        </div>
       </div>
 
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="email" className="text-secondary-foreground font-medium">Email</Label>
-        <Input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="you@example.com"
-          required
-          className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
-        />
-      </div>
+      <div className="flex flex-1 flex-col gap-2">
+          <Label htmlFor="email" className="text-secondary-foreground font-medium">Subject</Label>
+          <Input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject"
+            required
+            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+          />
+        </div>
 
       <div className="flex flex-col gap-2">
         <Label htmlFor="message" className="text-secondary-foreground font-medium">Message</Label>
