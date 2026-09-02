@@ -11,13 +11,6 @@
   --color-primary: var(--primary-color);
   --color-primary-foreground: var(--primary-color-foreground);
 
-  --color-background: var(--background-color);
-  --color-accent: var(--accent-color);
-  --color-green: var(--green-color);
-  --color-page-bg: var(--page-bg-color);
-  --color-text-base: var(--text-base-color);
-  --color-text-contrast: var(--text-contrast-color);
-
   --text-7xl: 80px;
   --text-6xl: 61px;
   --text-5xl: 47px;
@@ -29,35 +22,30 @@
 }
 
 :root {
+
+  --base-color: rgb(2, 2, 126);
+  --accent-color: rgb(200, 255, 0);
+
+
   --black-color: #ECECEC;
   --white-color: #1D1D1E;
-  --primary-color: #62ff62;
+  --primary-color: color-mix(in oklab, var(--base-color) 10%, var(--accent-color) 90%);
   --primary-color-foreground: #1D1D1E;
-  --secondary-color: #234606;
+  --secondary-color: var(--base-color);
   --secondary-color-foreground: #ECECEC;
-
-  --background-color: #475B63;
-  --accent-color: #729B79;
-  --green-color: #729B79;
-  --page-bg-color: #FFFFFF;
-  --text-base-color: #2E2C2F;
-  --text-contrast-color: #FFFFFF;
 }
 
 .light {
-  --black-color: #1D1D1E;
-  --white-color: #ECECEC;
-  --primary-color: color-mix(in oklab, #62ff62 150%, transparent);
-  --primary-color-foreground: #1D1D1E;
-  --secondary-color: color-mix(in oklab, #234606 80%, transparent);
-  --secondary-color-foreground: #ECECEC;
+  --base-color: rgb(2, 2, 126);
+  --accent-color: rgb(200, 255, 0);
 
-  --background-color: #475B63;
-  --accent-color: #729B79;
-  --green-color: #729B79;
-  --page-bg-color: #FFFFFF;
-  --text-base-color: #2E2C2F;
-  --text-contrast-color: #FFFFFF;
+
+  --black-color: #ECECEC;
+  --white-color: #1D1D1E;
+  --primary-color: color-mix(in oklab, var(--base-color) 10%, var(--accent-color) 90%);
+  --primary-color-foreground: #1D1D1E;
+  --secondary-color: var(--base-color);
+  --secondary-color-foreground: #ECECEC;
 }
 
 html {

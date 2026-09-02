@@ -65,12 +65,12 @@ export function MainNav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
 
       {/* Mobile Menu */}
       <div className="@lg:hidden flex items-center gap-2">
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <Sheet>
           <SheetTrigger
             render={

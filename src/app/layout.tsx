@@ -27,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn("h-full", "antialiased", instrumentSerif.variable, instrumentSans.variable)}
     >
       <head>
-        <Script id="theme-loader" strategy="beforeInteractive">
+        {/* <Script id="theme-loader" strategy="beforeInteractive">
           {`
             try {
               const savedTheme = localStorage.getItem('theme');
@@ -38,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               }
             } catch (e) {}
           `}
-        </Script>
+        </Script> */}
       </head>
       <body className="min-h-full flex flex-col bg-page-bg text-text-base transition-colors duration-300">
         {children}
