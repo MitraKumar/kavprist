@@ -1,8 +1,10 @@
 import { Meteors } from "./ui/meteors";
+import { NoiseTexture } from "./ui/noise-texture";
 
 export function AboutSection() {
   return (
     <div id="about" className="relative overflow-hidden grid grid-cols-1 @lg:grid-cols-12 py-16 @lg:py-24 px-6 @lg:px-0 text-black">
+      <NoiseTexture noiseOpacity={0.45} />
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-8 mb-6 @lg:mb-8">
         <h2 className="text-4xl @sm:text-5xl @lg:text-6xl">
           Who are <span className="text-primary">we</span>
