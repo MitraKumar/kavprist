@@ -20,12 +20,12 @@ export function HeroSection() {
             Transforming <span className="text-primary">Ideas</span> into Digital
             Space
           </h1>
-          <p className="text-xs py-4 tracking-wider">
-            Development with{" "}
+          <p className="text-xs py-4 tracking-wider font-bold">
+            Development driven by{" "}
             <span className="text-primary">QUALITY & INTELLIGENCE</span>
           </p>
 
-          <a href="#contact" className={cn("mt-4", "border-2", "border-primary", buttonVariants({ variant: "link" }))}>
+          <a href="#contact" className={cn("mt-4", buttonVariants({ variant: "outline", size: "lg" }))}>
             Let&apos;s Connect <RiArrowRightUpLine />
           </a>
         </div>

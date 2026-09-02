@@ -49,7 +49,7 @@ export function ContactForm() {
             name="name"
             placeholder="Your Name"
             required
-            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+            className="bg-page-bg border-black/40 text-black placeholder:text-black/40 focus-visible:ring-black/20"
           />
         </div>
         <div className="flex flex-1 flex-col gap-2">
@@ -60,7 +60,7 @@ export function ContactForm() {
             name="email"
             placeholder="you@example.com"
             required
-            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+            className="bg-page-bg border-black/40 text-black placeholder:text-black/40 focus-visible:ring-black/20"
           />
         </div>
       </div>
@@ -73,7 +73,7 @@ export function ContactForm() {
             name="subject"
             placeholder="Subject"
             required
-            className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20"
+            className="bg-page-bg border-black/40 text-black placeholder:text-black/40 focus-visible:ring-black/20"
           />
         </div>
 
@@ -85,7 +85,7 @@ export function ContactForm() {
           placeholder="How can we help you?"
           required
           rows={5}
-          className="bg-page-bg border-black/10 text-black placeholder:text-black/40 focus-visible:ring-black/20 resize-none"
+          className="bg-page-bg border-black/40 text-black placeholder:text-black/40 focus-visible:ring-black/20 resize-none"
         />
       </div>
 
