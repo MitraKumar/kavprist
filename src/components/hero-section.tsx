@@ -14,6 +14,7 @@ export function HeroSection() {
           alt=""
           className="@lg:mask-l-from-40% @lg:mask-l-to-90% w-full h-full object-cover @lg:max-h-none"
           placeholder="blur"
+          priority={true}
         />
       </div>
 

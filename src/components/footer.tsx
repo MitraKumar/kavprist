@@ -24,6 +24,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:text-primary"
+          aria-label="Facebook"
         >
           <RiFacebookBoxLine />
         </a>
@@ -32,6 +33,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:text-primary"
+          aria-label="Instagram"
         >
           <RiInstagramLine />
         </a>
@@ -40,6 +42,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:text-primary"
+          aria-label="Youtube"
         >
           <RiYoutubeLine />
         </a>
@@ -48,6 +51,7 @@ export function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:text-primary"
+          aria-label="X"
         >
           <RiTwitterXLine />
         </a>
