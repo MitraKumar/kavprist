@@ -8,7 +8,7 @@ export function HeroSection() {
       {/* Background Image Layer (Spans full height from top to bottom of hero) */}
       <div className="absolute inset-y-0 right-0 w-full @lg:w-3/4 opacity-20 @md:opacity-80 light:opacity-20 light:@md:opacity-20 pointer-events-none z-0">
         <img
-          src={"/assets/header-bg-4.jpg"}
+          src={"/assets/header-background.webp"}
           alt=""
           className="@lg:mask-l-from-40% @lg:mask-l-to-90% w-full h-full object-cover @lg:max-h-none"
         />
