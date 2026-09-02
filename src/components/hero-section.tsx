@@ -1,16 +1,19 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import Image from "next/image";
+import BackgroundImage from '../../public/assets/header-background.webp'
 
 export function HeroSection() {
   return (
     <div className="relative grid grid-cols-1 @lg:grid-cols-12 bg-secondary pt-20 @lg:pt-28">
       {/* Background Image Layer (Spans full height from top to bottom of hero) */}
       <div className="absolute inset-y-0 right-0 w-full @lg:w-3/4 opacity-20 @md:opacity-80 light:opacity-20 light:@md:opacity-20 pointer-events-none z-0">
-        <img
-          src={"/assets/header-background.webp"}
+        <Image
+          src={ BackgroundImage }
           alt=""
           className="@lg:mask-l-from-40% @lg:mask-l-to-90% w-full h-full object-cover @lg:max-h-none"
+          placeholder="blur"
         />
       </div>
 
