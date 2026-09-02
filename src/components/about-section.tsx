@@ -1,4 +1,3 @@
-import { Meteors } from "./ui/meteors";
 import { NoiseTexture } from "./ui/noise-texture";
 
 export function AboutSection() {
@@ -30,7 +29,6 @@ export function AboutSection() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
           tempore earum,
         </p>
-        <Meteors number={20} />
       </div>
     </div>
   )

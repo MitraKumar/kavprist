@@ -6,7 +6,6 @@ import { NoiseTexture } from "./ui/noise-texture"
 export function ContactSection() {
   return (
     <div id="contact" className="relative grid grid-cols-1 @lg:grid-cols-12 @lg:gap-4 py-16 @lg:py-12 px-6 @lg:px-0 text-black">
-      <NoiseTexture noiseOpacity={0.45} />
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-4 @lg:pt-20">
         <h2 className="text-4xl @sm:text-5xl @lg:text-6xl mb-4">
           Contact <span className="text-primary">Us</span>
@@ -24,9 +23,6 @@ export function ContactSection() {
             </a>
           </span>
         </p>
-        <div className="relative mb-4 w-full px-40 pt-8 pb-40 md:pb-60 overflow-hidden">
-          <Globe className="top-0" />
-        </div>
       </div>
       <div className="col-span-1 @lg:col-start-3 @lg:col-span-4"></div>
       <div className="col-span-1 @lg:col-start-7 @lg:row-start-1 @lg:col-span-4 @lg:row-span-2 bg-secondary p-6 @lg:p-8 shadow-lg">
