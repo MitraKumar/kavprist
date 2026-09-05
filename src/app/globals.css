@@ -11,6 +11,8 @@
   --color-primary: var(--primary-color);
   --color-primary-foreground: var(--primary-color-foreground);
 
+  --font-cursive: var(--font-instrument-serif);
+
   --text-7xl: 80px;
   --text-6xl: 61px;
   --text-5xl: 47px;
@@ -24,29 +26,18 @@
 :root {
 
   --base-color: #1868DB;
-  --accent-color: rgb(200, 255, 0);
+  --accent-color: #cdf8ff;
 
 
   --black-color: #ECECEC;
   --white-color: #1D1D1E;
-  --primary-color: color-mix(in oklab, var(--base-color) 10%, var(--accent-color) 90%);
+  --primary-color: var(--accent-color);
   --primary-color-foreground: #1D1D1E;
   --secondary-color: var(--base-color);
   --secondary-color-foreground: #ECECEC;
 }
 
-.light {
-  --base-color: rgb(2, 2, 126);
-  --accent-color: rgb(200, 255, 0);
-
-
-  --black-color: #ECECEC;
-  --white-color: #1D1D1E;
-  --primary-color: color-mix(in oklab, var(--base-color) 10%, var(--accent-color) 90%);
-  --primary-color-foreground: #1D1D1E;
-  --secondary-color: var(--base-color);
-  --secondary-color-foreground: #ECECEC;
-}
+.light {}
 
 html {
   scroll-behavior: smooth;
